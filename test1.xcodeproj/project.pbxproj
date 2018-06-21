@@ -13,6 +13,8 @@
 		1432E2AA20DB9B0100B52DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1432E2A820DB9B0100B52DFF /* LaunchScreen.storyboard */; };
 		1432E2B220DB9C5100B52DFF /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2B120DB9C5100B52DFF /* MyTableViewController.swift */; };
 		1432E2B420DB9CD100B52DFF /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */; };
+		1432E2B620DBA30D00B52DFF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2B520DBA30D00B52DFF /* MapViewController.swift */; };
+		1432E2B920DBA34C00B52DFF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1432E2B820DBA34C00B52DFF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1432E2AB20DB9B0100B52DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1432E2B120DB9C5100B52DFF /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		1432E2B520DBA30D00B52DFF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1432E2B820DBA34C00B52DFF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1432E2B920DBA34C00B52DFF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				1432E29E20DB9B0100B52DFF /* test1 */,
 				1432E29D20DB9B0100B52DFF /* Products */,
+				1432E2B720DBA34C00B52DFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				1432E2AB20DB9B0100B52DFF /* Info.plist */,
 				1432E2B120DB9C5100B52DFF /* MyTableViewController.swift */,
 				1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */,
+				1432E2B520DBA30D00B52DFF /* MapViewController.swift */,
 			);
 			path = test1;
+			sourceTree = "<group>";
+		};
+		1432E2B720DBA34C00B52DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1432E2B820DBA34C00B52DFF /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +157,7 @@
 				1432E2A020DB9B0100B52DFF /* AppDelegate.swift in Sources */,
 				1432E2B220DB9C5100B52DFF /* MyTableViewController.swift in Sources */,
 				1432E2B420DB9CD100B52DFF /* MyTableViewCell.swift in Sources */,
+				1432E2B620DBA30D00B52DFF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

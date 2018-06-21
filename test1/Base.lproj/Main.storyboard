@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--기말고사-->
         <scene sceneID="u5f-eo-B4g">
             <objects>
                 <tableViewController id="gaS-ig-rgF" customClass="MyTableViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +45,7 @@
                                 <connections>
                                     <outlet property="address" destination="m9f-1g-g5k" id="oId-DH-Jcc"/>
                                     <outlet property="name" destination="Z7Z-pk-tkr" id="tm2-BS-1hX"/>
+                                    <segue destination="OEA-c7-dYH" kind="show" identifier="mapview" id="2GB-JP-DHE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,7 +54,7 @@
                             <outlet property="delegate" destination="gaS-ig-rgF" id="njN-yo-glC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="uxc-lI-Jh8"/>
+                    <navigationItem key="navigationItem" title="기말고사" id="uxc-lI-Jh8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQw-8c-XIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,6 +75,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6A-Bq-nhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-769" y="-70"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="wSj-d9-r86">
+            <objects>
+                <viewController id="OEA-c7-dYH" customClass="MapViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raS-fg-HJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0u8-tL-TdJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0u8-tL-TdJ" firstAttribute="top" secondItem="08E-rY-4aV" secondAttribute="top" id="8jg-OV-fMU"/>
+                            <constraint firstItem="08E-rY-4aV" firstAttribute="bottom" secondItem="0u8-tL-TdJ" secondAttribute="bottom" id="9T9-Bn-yax"/>
+                            <constraint firstItem="08E-rY-4aV" firstAttribute="bottom" secondItem="0u8-tL-TdJ" secondAttribute="bottom" id="IHw-JD-Hnd"/>
+                            <constraint firstItem="0u8-tL-TdJ" firstAttribute="top" secondItem="08E-rY-4aV" secondAttribute="top" id="ggJ-IC-fgb"/>
+                            <constraint firstItem="08E-rY-4aV" firstAttribute="trailing" secondItem="0u8-tL-TdJ" secondAttribute="trailing" id="ntL-Pa-dLs"/>
+                            <constraint firstItem="0u8-tL-TdJ" firstAttribute="leading" secondItem="08E-rY-4aV" secondAttribute="leading" id="om6-sE-gkg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="08E-rY-4aV"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="0u8-tL-TdJ" id="bvF-4t-A2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6w-Gw-HyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-106"/>
         </scene>
     </scenes>
 </document>
