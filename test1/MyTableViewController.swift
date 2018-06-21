@@ -10,7 +10,7 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
 
-    var foodStorename = ["동의과학대학교", "부산시민공원" , "롯데호텔 부산본점"]
+    var foodStoreName = ["동의과학대학교", "부산시민공원" , "롯데호텔 부산본점"]
     var foodStoreAddress = ["부산광역시 부산진구 양지로 54", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 503-15"]
     
     
@@ -33,23 +33,33 @@ class MyTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        
+        //테이블 갯수
+        
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return foodStoreName.count
+        
+        //셀 갯수
+        
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath) as! MyTableViewCell
 
         // Configure the cell...
 
+        cell.name.text = foodStoreName[indexPath.row]
+        cell.address.text = foodStoreAddress[indexPath.row]
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
