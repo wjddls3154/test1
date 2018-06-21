@@ -21,6 +21,35 @@ class MapViewController: UIViewController {
 
         self.title = name
         
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(address, completionHandler: {
+            (placemarks: [CLPlacemark]?, error: Error?) -> Void in
+            
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            if placemarks != nil {
+                let placemark = placemarks![0]
+                
+                // Add annotation
+                let annotation = MKPointAnnotation()
+                annotation.title = self.name
+                annotation.subtitle = self.address
+                
+                if let location = placemark.location {
+                    annotation.coordinate = location.coordinate
+                    self.map.addAnnotation(annotation)
+                    
+                    // Set zoom level
+                    let region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 700, 700)
+                    self.map.setRegion(region, animated: true)
+                    self.map.selectAnnotation(annotation, animated: true)
+                }
+            }
+        })
+        
         
         
         // Do any additional setup after loading the view.

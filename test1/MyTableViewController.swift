@@ -11,7 +11,7 @@ import UIKit
 class MyTableViewController: UITableViewController {
 
     var foodStoreName = ["동의과학대학교", "부산시민공원" , "롯데호텔 부산본점"]
-    var foodStoreAddress = ["부산광역시 부산진구 양지로 54", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 503-15"]
+    var foodStoreAddress = ["부산광역시 부산진구 양정동 429-19 ", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 503-15"]
     
     
     override func viewDidLoad() {
