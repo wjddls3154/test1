@@ -107,7 +107,14 @@ class MyTableViewController: UITableViewController {
             destinationController.name = foodStoreName[indexPath.row]
             destinationController.address = foodStoreAddress[indexPath.row]
             }
+        } else if segue.identifier == "total" {
+            let destinationController = segue.destination as!
+            TotalViewController
+            destinationController.name = foodStoreName
+            destinationController.address = foodStoreAddress
+            
         }
+        
     }
     
 

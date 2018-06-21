@@ -15,6 +15,7 @@
 		1432E2B420DB9CD100B52DFF /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */; };
 		1432E2B620DBA30D00B52DFF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2B520DBA30D00B52DFF /* MapViewController.swift */; };
 		1432E2B920DBA34C00B52DFF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1432E2B820DBA34C00B52DFF /* MapKit.framework */; };
+		1432E2BB20DBABF900B52DFF /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E2BA20DBABF900B52DFF /* TotalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		1432E2B520DBA30D00B52DFF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1432E2B820DBA34C00B52DFF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1432E2BA20DBABF900B52DFF /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				1432E2B120DB9C5100B52DFF /* MyTableViewController.swift */,
 				1432E2B320DB9CD100B52DFF /* MyTableViewCell.swift */,
 				1432E2B520DBA30D00B52DFF /* MapViewController.swift */,
+				1432E2BA20DBABF900B52DFF /* TotalViewController.swift */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				1432E2A020DB9B0100B52DFF /* AppDelegate.swift in Sources */,
 				1432E2B220DB9C5100B52DFF /* MyTableViewController.swift in Sources */,
 				1432E2B420DB9CD100B52DFF /* MyTableViewCell.swift in Sources */,
+				1432E2BB20DBABF900B52DFF /* TotalViewController.swift in Sources */,
 				1432E2B620DBA30D00B52DFF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
